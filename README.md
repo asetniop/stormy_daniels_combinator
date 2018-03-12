@@ -25,7 +25,7 @@ Here's the set of data that Susan was working with to get the total she found su
 
 The total of $129,999.72 is obtained by adding up 2, 3, 4, 5, and 8.  
 
-This script breaks the total data set (available here - https://t.co/fS0LJ4o5Ke) into chronological windows specified by the range_window variable (i.e. range_window = 12 will build an array of 12 sequential payments).
+This script breaks the total data set of payments (taken from the excel file and built into an array) into chronological windows specified by the range_window variable (i.e. range_window = 12 will build an array of 12 sequential payments).
 
 Each window is then scanned via the combinator to determine all possible combinations with the minimum and maximum batch size.  Each combination is summed, and checked to see whether it meets the criteria (default is within $1 of $130,000.00) and is distinct from the originally identified combination.  If so, it is counted and displayed.
 
